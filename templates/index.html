@@ -9,8 +9,8 @@
 	<title>Push Notification | Raturi</title>
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
-	<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
 </head>
@@ -25,7 +25,7 @@
 		<p>Welcome to the webpush notification. The button below needs to be
 			fixed to support subscribing to push.</p>
 		<p>
-			<button disabled class="js-push-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+			<button disabled class="js-push-btn btn waves-effect waves-light">
 				Enable Push Messaging
 			</button>
 		</p>
@@ -37,12 +37,11 @@
 
 			<hr>
 			<p>You can test push notification below.</p>
-			<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="push_message()">Test Push Notification</button>
+			<button type="submit" class="btn waves-effect waves-light red" onclick="push_message()">Test Push Notification</button>
 		</section>
 	</main>
 
 	<script src="{{ url_for('static',filename='main.js') }}"></script>
-	<script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 </body>
 
 
