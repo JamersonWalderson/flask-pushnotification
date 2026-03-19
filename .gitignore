@@ -1,3 +1,5 @@
 *.pem
 private_key.txt
 public_key.txt
+.venv
+__pycache__
